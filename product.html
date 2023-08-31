@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Review Form</title>
+<link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <h1>PRODUCT REVIEW FORM</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label><b>Product Name:</b></label><label class="validation-error hide" id="prodNameValidationError">This field is required.</label>
+                        <input type="text" name="prodName" id="prodName">
+                    </div>
+                    <div>
+                        <label><b>Rating(1-5):</b></label>
+                        <input type="text" name="rating" id="rating">
+                    </div>
+                    <div>
+                        <label><b>Review:</b></label>
+                        <input type="text" name="review" id="review">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <b><input type="submit" value="SUBMIT"></b>
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="productList">
+                    <thead>
+                        <h2>-- PRODUCT REVIEW --</h2>
+                        <tr>
+                            <th>Product Name </th>
+                            <th>Rating </th>
+                            <th>Review </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="product.js"></script>
+</body>
+</html>
